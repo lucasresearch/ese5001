@@ -1,2 +1,2 @@
 import numpy as np
-print("Hello World")
+from src.simulator.rgw import LMAO
