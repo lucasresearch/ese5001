@@ -6,9 +6,17 @@ in random places
 import numpy as np
 import matplotlib.pyplot as plt
 class GridWorld:
-    def __init__(self,height:int=10,width:int=10,density:float=0.1) -> None:
+    def __init__(self,height:int=10,width:int=10, p:float=0.1) -> None:
         self.height = height
         self.width = width
-        self.grid = np.random.choice(a=[False, True], size=(height, width), p=[density, 1-density])
+        self.grid = np.random.choice(a=[False, True], size=(height, width), p=[1-p, p])
         return
-    def plot
+    def plot(self) -> None:
+        plt.imshow(self.grid, cmap='plasma',  interpolation='nearest')
+        plt.show()
+        return
+    def print():
+        print("hello world")
+        return
+
+    
