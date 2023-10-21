@@ -12,7 +12,7 @@ class GridWorld:
         self.grid = np.random.choice(a=[False, True], size=(height, width), p=[1-p, p])
         return
     def plot(self) -> None:
-        plt.imshow(self.grid, cmap='plasma',  interpolation='nearest')
+        plt.imshow(self.grid, cmap='Reds',  interpolation='nearest')
         plt.show()
         return
     def print():
